@@ -12,7 +12,7 @@ numDates<-72 # number of experimental dates
 exptDayList<-seq(1:numDates)
 
 # make shell for iterations below with house cordinates
-# RANDOM HOUSE LOCATIONS with a range marching original study for calculation of distance differences
+# RANDOM HOUSE LOCATIONS with a range matching original study for calculation of distance differences
 mosqDataShell<-array(-9,dim=c(30, 6))
 mosqDataShell[,1]<-seq(1:numHousesPerVillage)
 mosqDataShell[,2]<-runif(numHousesPerVillage,0.00,0.05) 
@@ -155,9 +155,11 @@ mosqfunction = function(bbeta, lambda,  coverage, hseFactor){
   return(mosq)
 }
 
+# small test (since 100 takes a little while to run
+head(mosqfunction(0.2,0.5,24,0.8))
 # example simulation for one combination of parameter values with 100 replicates
 sim1<-data.frame(replicate(100,  mosqfunction(0.2, 0.5,  24, 0.8)))
-# bbeta, lambda, coverage(as number of houses), hseFactor
+# inputs are: bbeta, lambda, coverage(as number of houses), hseFactor
 
 for(i in 1:length(sim1)) {
   sim <- data.frame(sim1[,i])
