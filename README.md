@@ -2,8 +2,8 @@
 method for secondary analysis of trial data
 
 Contains code from the paper <br>
-<i>Can trials of spatial repellents be used to estimate mosquito movement?</i> Malinga J, Maia M, Moore S & Ross A. 
-
+<i>Can trials of spatial repellents be used to estimate mosquito movement?</i> Malinga J, Maia M, Moore S & Ross A. <br>
+<i>Parasites & Vectors</i> 2019, in press
 
 # cpp codes _ simulation
 
@@ -11,7 +11,7 @@ Contains the C++ code to perform the analysis on the trial data (which can be re
 There are separate files for the trials with/out additional seasonality data.
 
 Each input dataset has to be renamed to "aggTrapSimul.txt" for the code to run.
-Otherwise, batch scripts make this process easier by automating the process for all the simulated datasets.<br><br>
+Otherwise, batch scripts make this process easier by automating the process for all the simulated datasets.<br>
 
 The fitting method uses the Nelder-Mead algorithm from the AS047 library. This came from:<br>
 https://people.sc.fsu.edu/~jburkardt/f77_src/asa047/asa047.html
