@@ -16,7 +16,7 @@ Batch scripts make this process easier by automating the process for all the sim
 The fitting method uses the Nelder-Mead algorithm from the AS047 library by John Burkhardt. This came from:<br>
 https://people.sc.fsu.edu/~jburkardt/f77_src/asa047/asa047.html
 
-aggTrapSimul.txt - contains an exmaple simulated dataset, which can be made using the R scripts in /r codes_smulation
+aggTrapSimul.txt - contains an example simulated dataset, which can be made using the R scripts in /r_codes
 
 # r codes _ simulation
 
