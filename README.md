@@ -8,15 +8,15 @@ Contains code from the paper <br>
 # cpp codes _ simulation
 
 Contains the C++ code to perform the analysis on the trial data (which can be real or simulated).
-There are separate files for the trials with/out additional seasonality data.
+There are separate files for the trials with/out additional seasonality data. 
 
-Each input dataset has to be renamed to "aggTrapSimul.txt" for the code to run.
+Each input dataset has to be renamed to "aggTrapSimul.txt" for the code to run. (aggTrapSimul.txt contains an example simulated dataset, which can be made using the R scripts in /r_codes). <br>
+
 Batch scripts make this process easier by automating the process for all the simulated datasets.<br>
 
 The fitting method uses the Nelder-Mead algorithm from the AS047 library by John Burkhardt. This came from:<br>
 https://people.sc.fsu.edu/~jburkardt/f77_src/asa047/asa047.html
 
-aggTrapSimul.txt - contains an example simulated dataset, which can be made using the R scripts in /r_codes
 
 # r codes _ simulation
 
