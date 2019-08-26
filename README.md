@@ -10,9 +10,9 @@ Contains code from the paper <br>
 Contains the C++ code to perform the analysis on the trial data (which can be real or simulated).
 There are separate files for the trials with/out additional seasonality data. 
 
-Each input dataset has to be renamed to "aggTrapSimul.txt" for the code to run (aggTrapSimul.txt contains an example simulated dataset, which can be made using the R scripts in /r_codes). <br>
+Each input dataset has to be renamed to "aggTrapSimul.txt" for the code to run (aggTrapSimul.txt contains an example simulated dataset, which can be made using the R scripts in /r codes simulation). <br>
 
-The output file results.txt gives the estimated baseline distribution of mosquitoes in the village (in the case of zero coverage of spatial repeelents) as a proportion for each house in the village. The parameter values for repFactor (the proportion of mosquitos that are diverted by spatial repellents of those in houses that use repellents), hseFactor (the proportion of mosquitoes diverted elsewhere as opposed to another house), lambda (the mean distance between households moved by the mosquitoes) and the log likelihood are given underneath.  
+The example output file results.txt gives the estimated baseline distribution of mosquitoes in the village (in the case of zero coverage of spatial repellents) as a proportion for each house in the village. The parameter values for repFactor (the proportion of mosquitos that are diverted by spatial repellents of those in houses that use repellents), hseFactor (the proportion of mosquitoes diverted elsewhere as opposed to another house), lambda (the mean distance between households moved by the mosquitoes) and the log likelihood are given underneath.  
 
 The fitting method uses the Nelder-Mead algorithm from the AS047 library by John Burkhardt. This came from:<br>
 https://people.sc.fsu.edu/~jburkardt/f77_src/asa047/asa047.html
