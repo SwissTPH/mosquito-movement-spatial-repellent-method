@@ -274,13 +274,12 @@ double incomingh[30] = {0.0}; // total mosquitoes incoming to house h
 double outgoingh[30]; // total mosquitoes outgoing from house h
 double predph[30]; // predicted mosquitoes in house h
 double dissaph[30]; // total mosquitoes from house h diverted elsewhere
-double adjdissaph[30]; // adjusted total mosquitoes from house h diverted elsewhere
 double adjpredph[30]; // adjusted predicted mosquitoes in house h
 double sumpredph = 0.0;  // sum of predicted mosquitoes per household
 double sumincoming = 0.0; // sum of all incomning mosquitoes
 double sumoutgoing = 0.0; // sum of all outgoing mosquitoes
 double sumdiss = 0.0; // sum of all mosquitoes diverted elsewhere
-double ntotal = 1000; // total mosquitoes that exist from all households
+double ntotal = 1000; // total mosquitoes that exist from all households (we assume constant seasonality in this example, data would be read in)
 double sumobsmosq = 0.0; // sum of all observed mosquitoes
 double dissapear; // difference between total mosquitoes that exist and those observed
 double obsmosqa[31]; // simulated total mosquitoes including the mosquitoes diverted elsewhere
@@ -381,12 +380,12 @@ for (int h=0; h<30; h++) {
     sumpredph = sumpredph + (predph[h] + dissaph[h]);
 }
 
-//calculate the adjusted predicted probability
+//calculate the adjusted predicted probability 
 for (int h=0; h<30; h++) { 
     adjpredph[h] = predph[h]/sumpredph;
        }
 
-// get the total number of observed mosquitoes dissapeaing per day
+// get the total number of observed mosquitoes disappearing per day
 double sumobsmosq = 0.0;
 for (int h=0; h<30; h++) {
     sumobsmosq = sumobsmosq + obsmosq[h + (d*30)];
