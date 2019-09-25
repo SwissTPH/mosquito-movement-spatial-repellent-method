@@ -3,7 +3,7 @@ method for secondary analysis of trial data
 
 Contains code from the paper <br>
 <i>Can trials of spatial repellents be used to estimate mosquito movement?</i> Malinga J, Maia M, Moore S & Ross A. <br>
-<i>Parasites & Vectors</i> 2019, in press
+<i>Parasites & Vectors</i> 2019, 12: 421
 
 # cpp codes _ simulation
 
