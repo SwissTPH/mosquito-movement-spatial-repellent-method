@@ -35,7 +35,7 @@ mosqDataShell<-arrange(mosqDataShell, house, exptDay)
 # SIMULATION FUNCTION FOR MOSQUITO DENSITIES AND COVERAGE SCENARIOS
 mosqfunction = function(bbeta, lambda,  coverage, hseFactor){
 # bbeta - proportion of mosquitoes repelled
-# lambda - mean distance moved between households by the repelled mosquitoes
+# lambda - parameter for the distribution of distances moved between households by the repelled mosquitoes (for the half-normal distribution chosen in this example, the mean is lambda*sqrt(2/pi))
 # coverage - number of households using repellents per day
 # hseFactor - proportion of mosquitoes diverted elsewhere other than to a house
   
