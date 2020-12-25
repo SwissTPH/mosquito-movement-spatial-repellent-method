@@ -5,7 +5,9 @@ Contains code from the paper <br>
 <i>Can trials of spatial repellents be used to estimate mosquito movement?</i> Malinga J, Maia M, Moore S & Ross A. <br>
 <i>Parasites & Vectors</i> 2019, 12: 421
 
-# cpp codes _ simulation
+There is a small error throughout the publication. We erroneously stated that the mean of the distances was lambda. Because the distribution assumed is a half-normal, the mean is lambda*sqrt(2/pi). This error appears in the methods and results of the manuscript. All means should be multiplied by sqrt(2/pi) or 0.798. The conclusions of the paper remain unchanged. The code was correct, but the description of lambda has now been updated. We apologise for this error. 
+
+# cpp codes _analysis
 
 Contains the C++ code to perform the analysis on the trial data (which can be real or simulated).
 There are separate files for the trials with/out additional seasonality data. 
