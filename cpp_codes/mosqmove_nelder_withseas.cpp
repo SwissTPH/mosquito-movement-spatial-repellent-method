@@ -215,7 +215,7 @@ pr[18] = exp(x[18]); pr[19] = exp(x[19]); pr[20] = exp(x[20]); pr[21] = exp(x[21
 pr[24] = exp(x[24]); pr[25] = exp(x[25]); pr[26] = exp(x[26]); pr[27] = exp(x[27]); pr[28] = exp(x[28]); pr[29] = 0.3;
 
 
-double lambda = exp(x[29]); // mean distance moved between houses by the repelled mosquitoes
+double lambda = exp(x[29]); // parameter for the distribution of distances moved between houses by the repelled mosquitoes (for the half-normal distribution chosen, the mean = lambda*sqrt(2/pi) )
 double spatialRepFactor = exp(x[30]) / (1 + exp(x[30]));  // the proportion of mosquitoes diverted from households using repellents
 double hseFactor = exp(x[31]) / (1 + exp(x[31])); // the proportion of mosquitoes diverted elsewhere as opposed to households
 
@@ -440,7 +440,7 @@ for (int h=0; h<31; h++) {
   }
 
  outfile << "repFactor " << spatialRepFactor << " " << endl; // proportion of mosquitoes repelled from households using repellents
- outfile << "lambda " << lambda << " " << endl; // mean distance moved between houses 
+ outfile << "lambda " << lambda << " " << endl; // parameter for the distribution of distances moved between houses (here we used the half-normal distribution and so the mean=lambda*sqrt(2/pi) ) 
  outfile << "hseFactor " << hseFactor << " " << endl; // proportion of mosquitoes diverted elsewhere
  outfile << "loglik " << loglik << " " << endl; // the loglikelihood
  outfile << "dissapear " << dissapear << " " << endl; // total number of mosquitoes diverted elsewhere
